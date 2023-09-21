@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/home.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='/home.css')}}">
+    <link rel="stylesheet" href="../static/companies.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='/companies.css')}}">
+    <title>Saksham</title>
+</head>
+<body>
+    <header>
+        <div class="cont">
+          <h2 class="logo">Saksham</h2>
+          <nav>
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/profile">Profile</a></li>
+              <li><a href="/login">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+<!-- ------------------------------------------ -->
+<div class="box">
+<h1>Companies Interested In You</h1>
+<div>
+  <input id="box1" type="checkbox" />
+  <label for="box1">Company 1 <br> <p>Looking for a software engineer <br> Knows MERN stack</p></label>
+  <input id="box2" type="checkbox" />
+  <label for="box2">Company 2 <br> <p>Looking for an engineer <br> Knows Python</p></label>
+  <input id="box3" type="checkbox" />
+  <label for="box3">Company 3 <br> <p>Looking for a software engineer <br> Knows HTML stack <br> Knows C++</p></label>
+</div>
+</div>
+<!-- ------------------------------------------ -->
+    <div class="form-group"><a href="/submit">
+       <button>Submit A Resume</button></a>
+    </div>
+</body>
+</html>
